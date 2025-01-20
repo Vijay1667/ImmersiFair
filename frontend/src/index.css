@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0px !important;
+}
+body canvas{
+    /* width: 100vw; */
+    /* height: 100vh; */
+}
+#GridLoaderCustom {
+    transform: rotate(45deg);
+    padding: 10px;
+}
+
+#GridLoaderCustom>span>span:first-child {
+    background-color: transparent !important;
+    /* Change this to your desired color */
+}
+
+#eachButton {
+    padding: 5px;
+    margin: 0px 4px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#buttonRow {
+    margin: 5px 0px;
+}
+
+.active {
+    color: #f0f0f0;
+    border: 2px solid #f0f0f0 !important;
+}
+
+#topRightNavMenu{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+#audioTransferRequest {
+    border: 2px solid orange;
+    border-radius: 5px;
+    color: white;
+    font-family: "Open Sans";
+    max-height: 120px;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#audioTransferRequest>#talkToButton:not(:first-child) {
+    border-top: 1px solid #ccc;
+    /* Replace with your preferred style */
+    /* padding-top: 10px; */
+    /* Optional, for better spacing */
+    /* margin-top: 10px; */
+    /* Optional, for better spacing */
+}
+.no-select {
+    user-select: none; /* Standard property */
+    -webkit-user-select: none; /* For WebKit-based browsers */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For older versions of Internet Explorer */
+  }
+  
+
+#talkToButton {
+    display:flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+#disconnectCall{
+    border: 2px solid orange;
+    color:white;
+    width:100%;
+}
+#hangUp{
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    font-family: "Open Sans";
+}
+
+.text-chat{
+    color: white;
+    font-family: "Open Sans";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    min-width: 200px;
+    min-height: 38px;
+    max-width: 60%;
+    max-height: 80%;
+    width: 300px;
+    height: 300px;
+    border: 2px solid orange;
+    resize: both;
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.text-chat-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    padding: 3px 0px 3px 5px;
+    border-bottom: 2px solid grey ;
+    background: black;
+}
+
+.text-chat-controls div{
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none; /* Standard property */
+    -webkit-user-select: none; /* For WebKit-based browsers */
+    
+}
+.text-chat-controls div:hover{
+    background-color: orange;
+    color: black;
+    
+    
+}
+
+.text-chat-body{
+    z-index: 1;
+    overflow: auto;
+    position: relative;
+    height: calc(100% - 75px);
+    background: rgba(60, 60, 60, 0.5) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.text-chat-history{
+    overflow: auto;
+    /* position: absolute; */
+}
+.text-chat-send{
+    border-top: 1px solid white;
+    z-index: 5;
+    background: rgba(60, 60, 60, 0.5) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding-top: 3px;
+    margin-bottom: 3px;
+    width: 100%;
+    display: flex;
+    position:absolute;
+    bottom: 0px;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.text-chat-message{
+    width:82%;
+}
+.text-chat-send input{
+    /* font-size:small; */
+    width: 100%;
+    border: 1px solid black;
+    padding: 5px 5px 5px 10px;
+    border-radius: 50px;
+}
+
+.text-chat-send-button{
+    padding: 0px !important;
+    cursor: pointer;
+    margin-right: 0px;
+    border: none !important;
+}
+.text-chat-each-message{
+    margin-right: 5px;
+}
+.text-chat-each-message-right{
+    /* position: absolute; */
+    /* right: 0px; */
+    text-align: end;
+}
+.text-chat-each-message span:first-child{
+    color: orange;
+    font-size: small;
+}
+
+.home-immersifair{
+    font-family: "Open Sans" !important;
+    padding: 10px;
+    background: linear-gradient(rgba(0, 55, 255, 0.16), rgba(64, 0, 255, 0.16)); 
+    height: 100vh;
+}
+
+.home-navbar{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: ; */
+}
+
+.home-navbar-heading{
+    font-size: 35px;
+    color: #0E0052;
+    font-weight: bold;
+}
+
+.home-contact-button{
+    background-color: rgb(10, 0, 116, 0.5) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    color: white !important;
+    width: 140px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.hr-line{
+    width: 90vw;
+    display: flex;
+    justify-self: center;
+    border-bottom: 1px solid white;
+}
+
+.home-body{
+    height: calc(100% - 88.4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    font-weight: 700;
+    
+    text-align: center;
+}
+
+.home-body > div{
+    color: #0b007e;
+    font-size: 50px;
+    width: 83%;
+}
+
+.home-body  button{
+    font-size: 18px;
+    
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(29, 0, 176, 0.638) ;
+    backdrop-filter: blur(10px) ;
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.2s;
+}
+
+.home-body button:hover{
+    color: white;
+    transition: 0.2s;
+    background-color: rgba(36, 0, 217, 0.638);
+}
+
+.signout{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: transparent !important;
+    
+    color: white !important;
+    font-family: "Open Sans" !important;
+}
+.signout button{ 
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px) ;
+    -webkit-backdrop-filter: blur(10px);
+    color: white !important;
+    border: 2px solid white !important;
+}
+
+.signout button:hover{
+    background-color: rgb(142, 142, 142);
+}
